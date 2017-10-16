@@ -1,0 +1,41 @@
+<html>
+<head>
+<meta charset="utf-8">
+	<link href="style.css" rel="stylesheet" type="text/css">
+	<link href='http://fonts.googleapis.com/css?family=Lato:400,700,300' rel='stylesheet' type='text/css'>
+</head>
+<body>
+	<script language="JavaScript" type="text/javascript">
+
+function TheLogin() {
+
+var password = 'cfg2015';
+var password2 = 'juancho';
+
+if (this.document.login.pass.value == password || this.document.login.pass.value == password2) {
+  top.location.href="instrucciones.html";
+}
+else {
+  location.href="cfg_index.html";
+  }
+}
+
+// End hiding --->
+</script>
+
+<center>
+	<br>
+	<br>
+Ingrese la contrase&ntildea que se le asign&oacute:<br><br>
+<form name="login" style="margin: 0px">
+<INPUT TYPE="password" NAME="pass" size="17" onKeyDown="if(event.keyCode==13) event.keyCode=9;" style="width: 282px; margin: 5px;"><br><br>
+<input type="button" class = "submit" value="Ingresar" style="width : 282px; margin: 3px" onClick="TheLogin(this.form)">
+</form>
+</center>
+
+
+
+
+
+</body>
+</html>
